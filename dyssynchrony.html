@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Alice Zhou</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<!-- Note: The "styleN" class below should match that of the banner element. -->
+					<header id="header" class="alt style2">
+						<a href="index.html" class="logo"><strong>Alice</strong> <span>Zhou</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="resume.html">Resume</a></li>
+							<li><a href="index.html#one">Portfolio</a></li>
+							<li><a href="fun.html">Fun</a></li>
+						</ul>
+					</nav>
+
+				<!-- Banner -->
+				<!-- Note: The "styleN" class below should match that of the header element. -->
+					<section id="banner" class="style2">
+						<div class="inner">
+							<span class="image">
+								<img src="images/pic07.jpg" alt="" />
+							</span>
+							<header class="major">
+								<h1>Detecting Patient Ventilator Dyssynchrony</h1>
+							</header>
+							<div class="content">
+								<p>Read the paper - DOI: <a href="https://doi.org/10.1093/jamia/ocad100">10.1016/j.bspc.2023.105251</a></p>
+							</div>
+						</div>
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h2>Premise</h2>
+									</header>
+									<p>Patients in ICUs are frequently supported by ventilators. There is increasing awareness of patient-ventilator dyssynchrony (PVD), a mismatch between a patient's respiratory effort versus assistance provided by the ventilator. PVD is believed to be a risk factor for infection, narcotic exposure, lung injury, and adverse neurocognitive effects. One of the most injurious consequences of PVDs are double cycled (DC) breaths—when two breaths are delivered by the ventilator instead of one. This project aimed to detect double cycled breaths using machine learning algorithms trained on patient waveform data collected at the bedside.</p>
+								</div>
+							</section>
+
+						<!-- Two -->
+							<section id="two" class="spotlights">
+								<section>
+									<a href="generic.html" class="image">
+										<img src="images/dysync.png" height=90% alt="" data-position="center center"/>
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Dyssynchrony Viewer</h3>
+											</header>
+											<p>I created multiple iterations of the dyssynchrony viewer as needed by the data science team. The viewer consisted of spectrograms of the ventilator flow, airway pressure and esophageal manometry as well as labeled PVDs and their respective typing. The user uses the tool to creates the spectrograms with their specified parameters and is also able to scroll to different points of the patient's stay.</p>
+										</div>
+									</div>
+								</section>
+								<section>
+									<a href="generic.html" class="image">
+										<img src="images/pic09.jpg" alt="" data-position="top center" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Dyssynchrony Failure Analysis Tool</h3>
+											</header>
+											<p>The failure analysis tool I created was used to identify when the machine learning model failed to identify a DC breath or labeled a normal breath as a DC breath. Highest false positives and false negatives were identified by the tool and combed through by data scientists. This tool helped identify barriers to high model performance and contributed to the resulting high performance of 0.98 AUROC.</p>
+										</div>
+									</div>
+								</section>
+							</section>
+
+					</div>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
